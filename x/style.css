@@ -1,0 +1,155 @@
+ /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    position: relative;
+    width: 100%;
+    min-height: 400px; /* Altura mínima */
+    background-image: url('bodega.png'); /* Imagen de fondo */
+    background-size: cover; /* Escala la imagen para cubrir todo el espacio */
+    background-position: center; /* Centra la imagen */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos del header */
+header {
+    background-color: #ff8306; /* Azul sofisticado */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700; /* Amarillo dorado */
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    position: relative;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #FFD700;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #000;
+    color: #000;
+}
+
+.section .image {
+    flex: 1;
+}
+
+.section .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.section .content {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    margin-left: -50px; /* Superposición sobre la imagen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.section .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #FF6F00; /* Línea naranja */
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .section .content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .section .image img {
+        height: auto;
+    }
+}
